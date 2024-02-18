@@ -14,8 +14,8 @@ export const LoginLayout = () => {
     </div>
     {/* Bottom */}
     <div className="w-full h-[55%] lg:h-full bg-white  flex justify-center items-center">
-      <main className="bg-white grid grid-cols-1 content-between w-full h-full lg:max-w-md lg:max-h-[30rem] xl:max-w-lg px-8 py-10">
-        <TextSignin />
+      <main className="grid grid-cols-1 content-between w-full h-full lg:max-w-md lg:max-h-[30rem] xl:max-w-lg px-8 py-10">
+        <TextSignin text="Sign in" Ptext="Don’t have an accout yet? " to={"/SignUp"} Ctext="Sign up"></TextSignin>
         <FormLogin />
         <ReFor />
         <Link to={"/"}>

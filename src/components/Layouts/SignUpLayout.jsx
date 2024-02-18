@@ -1,5 +1,5 @@
 import { ButtonLogin } from "../Elements/Button/ButtonLogin"
-import { FormLogin } from "../Fragments/FormLogin"
+import { FormSignUp } from "../Fragments/FormSignUp"
 import { ReFor } from "../Fragments/ReFor"
 import { TextSignin } from "../Fragments/TextSignin"
 import { Link } from "react-router-dom"
@@ -13,10 +13,10 @@ export const SignUpLayout = () => {
       </div>
     </div>
     {/* Bottom */}
-    <div className="w-full h-[55%] lg:h-full bg-white  flex justify-center items-center">
-      <main className="bg-white grid grid-cols-1 content-between w-full h-full lg:max-w-md lg:max-h-[30rem] xl:max-w-lg px-8 py-10">
-        <TextSignin text="Sign Up" Ptext="Already have an account? " Ctext="Sign in" />
-        <FormLogin />
+    <div className="w-full h-[55%] lg:h-full bg-white flex justify-center items-center">
+      <main className="grid grid-cols-1 content-between w-full h-full lg:max-w-md lg:max-h-[36rem] xl:max-w-lg px-8 py-10">
+        <TextSignin text="Sign Up" Ptext="Already have an account? " to={"/Login"} Ctext="Sign in" />
+        <FormSignUp />
         <ReFor />
         <Link to={"/"}>
           <ButtonLogin text="Sign in" />
