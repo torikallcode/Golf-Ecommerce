@@ -1,10 +1,14 @@
-import { ButtonLogin } from "../Elements/Button/ButtonLogin"
 import { FormLogin } from "../Fragments/FormLogin"
 import { ReFor } from "../Fragments/ReFor"
 import { TextSignin } from "../Fragments/TextSignin"
-import { Link } from "react-router-dom"
+
+
+
 
 export const LoginLayout = () => {
+
+
+
   return (<>
     {/* Top */}
     <div className="w-full h-[45%] lg:h-full bg-primary-0">
@@ -18,9 +22,6 @@ export const LoginLayout = () => {
         <TextSignin text="Sign in" Ptext="Don’t have an accout yet? " to={"/SignUp"} Ctext="Sign up"></TextSignin>
         <FormLogin />
         <ReFor />
-        <Link to={"/"}>
-          <ButtonLogin text="Sign in" />
-        </Link>
       </main>
     </div>
   </>
