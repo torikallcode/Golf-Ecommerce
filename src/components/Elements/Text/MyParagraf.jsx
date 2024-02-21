@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const MyParagraf = ({ className, Text = "..." }) => {
+export const MyParagraf = ({ classname, Text = "..." }) => {
   return (
-    <p className={`font-utama text-base font-normal ${className}`}>{Text}</p>
+    <p className={` ${classname}`}>{Text}</p>
   )
 }

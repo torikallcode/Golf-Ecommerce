@@ -1,11 +1,9 @@
-import { Home } from "../components/Layouts/Home"
-import Navbar from "../components/Layouts/Navbar"
+import { AuthLayout } from "../components/Layouts/AuthLayout"
 
 export const HomePage = () => {
   return (
     <div className="relative">
-      <Navbar></Navbar>
-      <Home></Home>
+      <AuthLayout></AuthLayout>
     </div>
   )
 }

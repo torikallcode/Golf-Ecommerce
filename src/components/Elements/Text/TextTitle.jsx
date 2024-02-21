@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const TextTitle = ({ text }) => {
+export const TextTitle = ({ text, classname }) => {
   return (
-    <h2 className="text-4xl sm:text-5xl lg:text-3xl font-bold font-utama mb-6">{text}</h2>
+    <h2 className={`${classname} font-bold font-utama`}>{text}</h2>
   )
 }
