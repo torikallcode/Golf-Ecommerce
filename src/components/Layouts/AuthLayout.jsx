@@ -4,6 +4,7 @@ import { CarouselFeatured } from '../organisme/CarouselFeatured'
 import { SelectFiture } from '../Fragments/SelectFiture'
 import { Categories } from '../organisme/Categories'
 import { Navbar } from '../organisme/Navbar/Navbar'
+import { Discount } from '../organisme/Discount'
 
 export const AuthLayout = () => {
 
@@ -35,6 +36,7 @@ export const AuthLayout = () => {
         <CarouselFeatured products={products} classname="mb-[72px] lg:mb-32"></CarouselFeatured>
         <Categories kategori={kategori}></Categories>
       </div>
+      <Discount></Discount>
     </div>
   )
 }
