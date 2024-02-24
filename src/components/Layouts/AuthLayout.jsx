@@ -9,29 +9,29 @@ import { Discount } from '../organisme/Discount'
 export const AuthLayout = () => {
 
   const products = [
-    { id: 1, Image: "/img/Product1.png", price: "$24.99", title: "Greg Norman - Men's Shark Logo Golf Polo Shirt", rating: "https://cdn.builder.io/api/v1/image/assets/TEMP/ac91ee13fa60a089929cfb3c84d88c4c7e44993d53054e7d2e3c0f8ca3250815" },
-    { id: 2, Image: "/img/Product1.png", price: "$24.99", title: "G/FORE - Mens Left Glove Snow 2023", rating: "https://cdn.builder.io/api/v1/image/assets/TEMP/ac91ee13fa60a089929cfb3c84d88c4c7e44993d53054e7d2e3c0f8ca3250815" },
-    { id: 3, Image: "/img/Product1.png", price: "$24.99", title: "Utility Rover-R Double Strap Bag All Black - 2023", rating: "https://cdn.builder.io/api/v1/image/assets/TEMP/ac91ee13fa60a089929cfb3c84d88c4c7e44993d53054e7d2e3c0f8ca3250815" },
-    { id: 4, Image: "/img/Product1.png", price: "$24.99", title: "Air Jordan 1 Low G Black/Black/Iron Grey - SS23", rating: "https://cdn.builder.io/api/v1/image/assets/TEMP/ac91ee13fa60a089929cfb3c84d88c4c7e44993d53054e7d2e3c0f8ca3250815" },
-    { id: 5, Image: "/img/Product1.png", price: "$24.99", title: "Greg Norman - Men's Shark Logo Golf Polo Shirt", rating: "https://cdn.builder.io/api/v1/image/assets/TEMP/ac91ee13fa60a089929cfb3c84d88c4c7e44993d53054e7d2e3c0f8ca3250815" },
-    { id: 6, Image: "/img/Product1.png", price: "$24.99", title: "Greg Norman - Men's Shark Logo Golf Polo Shirt", rating: "https://cdn.builder.io/api/v1/image/assets/TEMP/ac91ee13fa60a089929cfb3c84d88c4c7e44993d53054e7d2e3c0f8ca3250815" },
-    { id: 7, Image: "/img/Product1.png", price: "$24.99", title: "Greg Norman - Men's Shark Logo Golf Polo Shirt", rating: "https://cdn.builder.io/api/v1/image/assets/TEMP/ac91ee13fa60a089929cfb3c84d88c4c7e44993d53054e7d2e3c0f8ca3250815" },
+    { id: 1, Image: "/img/fitur1.svg", price: "$24.99", title: "Greg Norman - Men's Shark Logo Golf Polo Shirt", rating: "https://cdn.builder.io/api/v1/image/assets/TEMP/ac91ee13fa60a089929cfb3c84d88c4c7e44993d53054e7d2e3c0f8ca3250815" },
+    { id: 2, Image: "/img/fitur2.svg", price: "$24.99", title: "G/FORE - Mens Left Glove Snow 2023", rating: "https://cdn.builder.io/api/v1/image/assets/TEMP/ac91ee13fa60a089929cfb3c84d88c4c7e44993d53054e7d2e3c0f8ca3250815" },
+    { id: 3, Image: "/img/fitur3.svg", price: "$24.99", title: "Utility Rover-R Double Strap Bag All Black - 2023", rating: "https://cdn.builder.io/api/v1/image/assets/TEMP/ac91ee13fa60a089929cfb3c84d88c4c7e44993d53054e7d2e3c0f8ca3250815" },
+    { id: 4, Image: "/img/fitur4.svg", price: "$24.99", title: "Air Jordan 1 Low G Black/Black/Iron Grey - SS23", rating: "https://cdn.builder.io/api/v1/image/assets/TEMP/ac91ee13fa60a089929cfb3c84d88c4c7e44993d53054e7d2e3c0f8ca3250815" },
+    { id: 5, Image: "/img/kategori31.svg", price: "$24.99", title: "Greg Norman - Men's Shark Logo Golf Polo Shirt", rating: "https://cdn.builder.io/api/v1/image/assets/TEMP/ac91ee13fa60a089929cfb3c84d88c4c7e44993d53054e7d2e3c0f8ca3250815" },
+    { id: 6, Image: "/img/kategori2.svg", price: "$24.99", title: "Greg Norman - Men's Shark Logo Golf Polo Shirt", rating: "https://cdn.builder.io/api/v1/image/assets/TEMP/ac91ee13fa60a089929cfb3c84d88c4c7e44993d53054e7d2e3c0f8ca3250815" },
+    { id: 7, Image: "/img/kategori5.svg", price: "$24.99", title: "Greg Norman - Men's Shark Logo Golf Polo Shirt", rating: "https://cdn.builder.io/api/v1/image/assets/TEMP/ac91ee13fa60a089929cfb3c84d88c4c7e44993d53054e7d2e3c0f8ca3250815" },
   ]
 
   const kategori = [
-    { id: 1, image: "/img/Product1.png", Text: "Golf Clubs" },
-    { id: 2, image: "/img/Product1.png", Text: "Golf Clubs" },
-    { id: 3, image: "/img/Product1.png", Text: "Golf Clubs" },
-    { id: 4, image: "/img/Product1.png", Text: "Golf Clubs" },
-    { id: 5, image: "/img/Product1.png", Text: "Golf Clubs" },
-    { id: 6, image: "/img/Product1.png", Text: "Golf Clubs" },
+    { id: 1, image: "/img/kategori.svg", Text: "Golf Clubs" },
+    { id: 2, image: "/img/kategori2.svg", Text: "Golf Balls" },
+    { id: 3, image: "/img/kategori3.svg", Text: "Golf Bags" },
+    { id: 4, image: "/img/kategori4.svg", Text: "Clothing & Rainwear" },
+    { id: 5, image: "/img/kategori5.svg", Text: "Footwear" },
+    { id: 6, image: "/img/kategori6.svg", Text: "Accessories" },
   ]
 
   return (
     <div className='flex flex-col'>
       <Navbar></Navbar>
       <Home />
-      <div className='px-8 pt-8 xl:px-20 flex flex-col xl:max-w-[130rem] mx-auto'>
+      <div className='px-8 pt-8 xl:px-20 flex flex-col xl:max-w-[87rem] mx-auto mb-10 lg:mb-20'>
         <SelectFiture classname="mb-8"></SelectFiture>
         <CarouselFeatured products={products} classname="mb-[72px] lg:mb-32"></CarouselFeatured>
         <Categories kategori={kategori}></Categories>
