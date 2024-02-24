@@ -2,38 +2,10 @@ import React from 'react'
 import { Home } from '../organisme/Home'
 import { CarouselFeatured } from '../organisme/CarouselFeatured'
 import { SelectFiture } from '../Fragments/SelectFiture'
-import { CarouselFooter } from '../organisme/CarouselFooter'
-import { Featured } from '../organisme/Featured'
+import { Categories } from '../organisme/Categories'
+import { Navbar } from '../organisme/Navbar/Navbar'
 
 export const AuthLayout = () => {
-
-  const TheProducts = [
-    {
-      id: 1,
-      nama: "tes1",
-      price: "$32.00"
-    },
-    {
-      id: 2,
-      nama: "tes2",
-      price: "$57.00"
-    },
-    {
-      id: 3,
-      nama: "tes3",
-      price: "$57.00"
-    },
-    {
-      id: 4,
-      nama: "tes4",
-      price: "$57.00"
-    },
-    {
-      id: 5,
-      nama: "tes5",
-      price: "$57.00"
-    },
-  ]
 
   const products = [
     { id: 1, Image: "/img/Product1.png", price: "$24.99", title: "Greg Norman - Men's Shark Logo Golf Polo Shirt", rating: "https://cdn.builder.io/api/v1/image/assets/TEMP/ac91ee13fa60a089929cfb3c84d88c4c7e44993d53054e7d2e3c0f8ca3250815" },
@@ -45,11 +17,23 @@ export const AuthLayout = () => {
     { id: 7, Image: "/img/Product1.png", price: "$24.99", title: "Greg Norman - Men's Shark Logo Golf Polo Shirt", rating: "https://cdn.builder.io/api/v1/image/assets/TEMP/ac91ee13fa60a089929cfb3c84d88c4c7e44993d53054e7d2e3c0f8ca3250815" },
   ]
 
+  const kategori = [
+    { id: 1, image: "/img/Product1.png", Text: "Golf Clubs" },
+    { id: 2, image: "/img/Product1.png", Text: "Golf Clubs" },
+    { id: 3, image: "/img/Product1.png", Text: "Golf Clubs" },
+    { id: 4, image: "/img/Product1.png", Text: "Golf Clubs" },
+    { id: 5, image: "/img/Product1.png", Text: "Golf Clubs" },
+    { id: 6, image: "/img/Product1.png", Text: "Golf Clubs" },
+  ]
+
   return (
     <div className='flex flex-col'>
+      <Navbar></Navbar>
       <Home />
-      <div className='px-8 pt-8'>
-        <Featured items={products}></Featured>
+      <div className='px-8 pt-8 xl:px-20 flex flex-col xl:max-w-[130rem] mx-auto'>
+        <SelectFiture classname="mb-8"></SelectFiture>
+        <CarouselFeatured products={products} classname="mb-[72px] lg:mb-32"></CarouselFeatured>
+        <Categories kategori={kategori}></Categories>
       </div>
     </div>
   )
