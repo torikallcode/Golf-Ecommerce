@@ -16,7 +16,7 @@ export const Discount = ({ classname }) => {
         </Link>
       </div>
       <div className='lg:aspect-[4/3] lg:order-first'>
-        <Image src="/img/golf4.svg" classname="w-full h-full object-cover bg-center"></Image>
+        <Image src="/img/golf4.jpg" classname="w-full h-full object-cover bg-center"></Image>
       </div>
     </div>
   )
