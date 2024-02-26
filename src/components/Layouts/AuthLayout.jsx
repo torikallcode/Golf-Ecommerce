@@ -9,6 +9,8 @@ import { ShopCollection } from "../organisme/ShopCollection";
 import { LatestArticle } from "../../utils/isian.jsx/LatestArticle";
 import { LastArticleCard } from "../Fragments/Card/LastArticleCard";
 import { HeadLA } from "../Fragments/HeadLA";
+import { JoinSection } from "../organisme/JoinSection";
+import { MedsosSection } from "../Fragments/MedsosSection";
 
 export const AuthLayout = () => {
   const products = [
@@ -95,7 +97,7 @@ export const AuthLayout = () => {
         </h1>
         <ShopCollection />
       </div>
-      <div className="px-8 xl:max-w-[80rem] bigger:max-w-[120rem] mx-auto w-full">
+      <div className="px-8 xl:max-w-[80rem] bigger:max-w-[120rem] mx-auto w-full mb-10 lg:mb-20">
         <HeadLA classname="mb-10"></HeadLA>
         <div className="grid grid-cols-1 w-full lg:grid-cols-3 content-center justify-items-center gap-x-6">
           {LatestArticle.map((item) => (
@@ -103,6 +105,8 @@ export const AuthLayout = () => {
           ))}
         </div>
       </div>
+      <JoinSection></JoinSection>
+      <MedsosSection></MedsosSection>
     </div>
   );
 };
